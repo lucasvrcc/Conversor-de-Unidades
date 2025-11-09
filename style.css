@@ -1,3 +1,18 @@
-﻿h1 {
-    font-family: arroma;
+﻿body{
+    background-color: #142d4c;
+}
+
+h1{
+    font-family: tahoma;
+    text-align: center;
+    color: #ececec;
+}
+
+button{
+    margin: 15px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
 }
