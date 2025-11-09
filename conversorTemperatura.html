@@ -14,16 +14,19 @@
             <a href="conversorTemperatura.html"><button class="btn">Temperatura</button></a>
         </div>
 
-        <label id="labelTemp">Celsius (°C):</label>
-        <input type="number" id="temp" placeholder="Digite o valor">
+        <div class="container">
+            <div class="card">
+                <img id="termometro" src="termometro.avif" alt="Descrição da imagem">
+                <label id="labelTemp"><h2>Celcius (°C):</h2></label>
+                <input type="number" id="temp" placeholder="Digite o valor">
+                
+                <br>
 
-        <br><br>
-
-        <button onclick="converter()">Converter</button>
-        <button onclick="trocar()">Inverter</button>
-
-        <p id="resultado"></p>
-        <p id="resultado"></p>
+                <button onclick="converter()">Converter</button>
+                <button onclick="trocar()">Inverter</button>
+                <p id="resultado"></p>
+            </div>
+        </div>
 
         <script src="script.js"></script>
     </body>

@@ -18,10 +18,48 @@ button{
     font-size: 16px; 
     cursor: pointer; 
     border: none;
-    box-shadow: 2px 2px 5px #385170;
 }
 
 .container{
     display: flex;
     justify-content: center;
+}
+
+.card{
+    background-color: #385170; 
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    font-family: tahoma;
+    color: #ececec;
+    width: 300px;
+}
+
+.card img{
+    max-width: 100%; 
+    height: auto;
+    border-radius: 8px; 
+}
+
+.card h2{
+    margin-top: 5px; 
+    font-family: tahoma;
+    color: #ececec; 
+}
+
+.card input{
+    margin: 5px;
+    background-color: #9fd3c7;
+    text-align: center;
+    font-family: tahoma;
+    color: #385170;
+    font-weight: bold;
+}
+
+.card button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #9fd3c7;
+    color: #385170;
 }
