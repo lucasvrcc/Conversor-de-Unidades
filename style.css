@@ -10,6 +10,15 @@ h1{
 
 button{
     margin: 15px;
+    background-color: #385170;
+    color: #ececec;
+    border-radius: 12px;
+    padding: 15px 32px;
+    text-align: center; 
+    font-size: 16px; 
+    cursor: pointer; 
+    border: none;
+    box-shadow: 2px 2px 5px #385170;
 }
 
 .container{
