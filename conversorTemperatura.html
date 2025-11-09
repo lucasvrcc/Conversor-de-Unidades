@@ -13,9 +13,15 @@
             <a href="conversorPeso.html"><button class="btn">Peso</button></a>
             <a href="conversorTemperatura.html"><button class="btn">Temperatura</button></a>
         </div>
-        <input type="number" id="c" placeholder="Celsius">
-        <button onclick="converter()">Converter</button>
+        <label id="labelTemp">Celsius (°C):</label>
+        <input type="number" id="temp" placeholder="Digite o valor">
 
+        <br><br>
+
+        <button onclick="converter()">Converter</button>
+        <button onclick="trocar()">Inverter</button>
+
+        <p id="resultado"></p>
         <p id="resultado"></p>
         <br>
 
