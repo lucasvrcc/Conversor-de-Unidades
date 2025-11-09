@@ -17,13 +17,13 @@
         <div class="container">
             <div class="card">
                 <img src="balanca.avif" alt="Descrição da imagem">
-                <label><h2>Quilograma (KG):</h2></label>
-                <input type="number" id="temp" placeholder="Digite o valor">
+                <label id="labelPeso"><h2>Quilograma (KG):</h2></label>
+                <input type="number" id="peso" placeholder="Digite o valor">
                 
                 <br>
 
-                <button onclick="converter()">Converter</button>
-                <button onclick="trocar()">Inverter</button>
+                <button onclick="converterPeso()">Converter</button>
+                <button onclick="trocarPeso()">Inverter</button>
                 <p id="resultado"></p>
             </div>
         </div>

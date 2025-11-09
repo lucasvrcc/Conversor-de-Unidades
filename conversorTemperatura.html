@@ -17,13 +17,13 @@
         <div class="container">
             <div class="card">
                 <img src="termometro.avif" alt="Descrição da imagem">
-                <label><h2>Celcius (°C):</h2></label>
+                <label id="labelTemp"><h2>Celsius (°C):</h2></label>
                 <input type="number" id="temp" placeholder="Digite o valor">
                 
                 <br>
 
-                <button onclick="converter()">Converter</button>
-                <button onclick="trocar()">Inverter</button>
+                <button onclick="converterTemperatura()">Converter</button>
+                <button onclick="trocarTemperatura()">Inverter</button>
                 <p id="resultado"></p>
             </div>
         </div>
