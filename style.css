@@ -23,6 +23,9 @@ button{
 button:hover{
     background-color: #383f70;
 }
+button:active{
+    transform: scale(0.95);
+}
 
 .tituloCards{
     font-size: 1.5em;
@@ -33,6 +36,7 @@ button:hover{
 .container{
     display: flex;
     justify-content: center;
+    perspective: 1000px;
 }
 
 .card{

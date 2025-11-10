@@ -4,9 +4,10 @@
         <meta charset="utf-8" />
         <title>Conversor de Medidas</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="balancaIcon.webp">
     </head>
     <body>
-        <h1>Conversor de Medidas</h1>
+        <header><h1>Conversor de Medidas</h1></header>
         
         <div class="container">
             <a href="index.html"><button class="btn">Distância</button></a>
@@ -15,13 +16,11 @@
         </div>
       
         <div class="container">
-            <div class="card">
+            <div class="card" >
                 <img src="regua.jpg" alt="Descrição da imagem">
                 <label id="labelDistancia" class="tituloCards">Metros (M):</label>
-                <input type="number" id="distancia" placeholder="Digite o valor">
-                
+                <input type="number" id="distancia" placeholder="Digite uma medida">
                 <br>
-
                 <button onclick="converterDistancia()">Converter</button>
                 <button onclick="trocarDistancia()">Inverter</button>
                 <p id="resultado"></p>

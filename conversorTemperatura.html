@@ -4,9 +4,10 @@
         <meta charset="utf-8" />
         <title>Conversor de Medidas</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="balancaIcon.webp">
     </head>
     <body>
-        <h1>Conversor de Medidas</h1>
+        <header><h1>Conversor de Medidas</h1></header>
 
         <div class="container">
             <a href="index.html"><button class="btn">Distância</button></a>
@@ -18,10 +19,8 @@
             <div class="card">
                 <img src="termometro.avif" alt="Descrição da imagem">
                 <label id="labelTemp" class="tituloCards">Celsius (°C): </label>
-                <input type="number" id="temp" placeholder="Digite o valor">
-                
+                <input type="number" id="temp" placeholder="Digite uma medida">
                 <br>
-
                 <button onclick="converterTemperatura()">Converter</button>
                 <button onclick="trocarTemperatura()">Inverter</button>
                 <p id="resultado"></p>
