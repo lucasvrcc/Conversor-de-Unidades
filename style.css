@@ -20,6 +20,16 @@ button{
     border: none;
 }
 
+button:hover{
+    background-color: #383f70;
+}
+
+.tituloCards{
+    font-size: 1.5em;
+    font-family: tahoma;
+    color: #ececec;    
+}
+
 .container{
     display: flex;
     justify-content: center;
@@ -42,12 +52,6 @@ button{
     border-radius: 8px; 
 }
 
-.card h2{
-    margin-top: 5px; 
-    font-family: tahoma;
-    color: #ececec; 
-}
-
 .card input{
     margin: 5px;
     background-color: #9fd3c7;
@@ -62,4 +66,8 @@ button{
     padding: 10px 20px;
     background-color: #9fd3c7;
     color: #385170;
+}
+
+.card button:hover{
+    background-color: #9fbfd3;
 }

@@ -1,17 +1,18 @@
-// Distância
+// Metros / Pés
 let modoDistancia = "MpraP";
 
 function converterDistancia(){
     let v = Number(document.getElementById('distancia').value);
+    let r;
 
     if(modoDistancia === "MpraP"){
-        let p = v * 3.28;
-        document.getElementById('resultado').innerHTML =
+        let p = v * 3.28084;
+        document.getElementById('resultado').textContent =
             v + " Metros = " + p.toFixed(2) + " Pés";
     } 
     else{
-        let m = v / 3.28;
-        document.getElementById('resultado').innerHTML =
+        let m = v / 3.28084;
+        document.getElementById('resultado').textContent =
             v + " Pés = " + m.toFixed(2) + " Metros";
     }
 }
@@ -19,18 +20,18 @@ function converterDistancia(){
 function trocarDistancia(){
     if(modoDistancia === "MpraP"){
         modoDistancia = "PpraM";
-        document.getElementById('labelDistancia').innerHTML = "Pés: ";
+        document.getElementById('labelDistancia').textContent = "Pés (FT): ";
     } 
     else{
         modoDistancia = "MpraP";
-        document.getElementById('labelDistancia').innerHTML = "Metros: ";
+        document.getElementById('labelDistancia').textContent = "Metros (M): ";
     }
 
     document.getElementById('distancia').value = "";
-    document.getElementById('resultado').innerHTML = "";
+    document.getElementById('resultado').textContent = "";
 }
 
-// Peso
+// Quilogramas / Libras
 let modoPeso = "KpraL";
 
 function converterPeso(){
@@ -38,12 +39,12 @@ function converterPeso(){
 
     if(modoPeso === "KpraL"){
         let l = v * 2.20462;
-        document.getElementById('resultado').innerHTML =
+        document.getElementById('resultado').textContent =
             v + " KG = " + l.toFixed(2) + " LB";
     } 
     else{
         let k = v / 2.20462;
-        document.getElementById('resultado').innerHTML =
+        document.getElementById('resultado').textContent =
             v + " LB = " + k.toFixed(2) + " KG";
     }
 }
@@ -51,18 +52,18 @@ function converterPeso(){
 function trocarPeso(){
     if(modoPeso === "KpraL"){
         modoPeso = "LpraK";
-        document.getElementById('labelPeso').innerHTML = "Libras (LB):";
+        document.getElementById('labelPeso').textContent = "Libras (LB):";
     } 
     else{
         modoPeso = "KpraL";
-        document.getElementById('labelPeso').innerHTML = "Quilogramas (KG):";
+        document.getElementById('labelPeso').textContent = "Quilogramas (KG):";
     }
 
     document.getElementById('peso').value = "";
-    document.getElementById('resultado').innerHTML = "";
+    document.getElementById('resultado').textContent = "";
 }
 
-// Temperatura
+// Celsius / Farenheit
 let modoTemp = "CpraF";
 
 function converterTemperatura(){
@@ -70,26 +71,26 @@ function converterTemperatura(){
 
     if(modoTemp === "CpraF"){
         let f = (v * 9 / 5) + 32;
-        document.getElementById('resultado').innerHTML =
-            v + "�C = " + f.toFixed(2) + "�F";
+        document.getElementById('resultado').textContent =
+            v + "°C = " + f.toFixed(2) + "°F";
     } 
     else{
         let c = (v - 32) * 5 / 9;
-        document.getElementById('resultado').innerHTML =
-            v + "�F = " + c.toFixed(2) + "�C";
+        document.getElementById('resultado').textContent =
+            v + "°F = " + c.toFixed(2) + "°C";
     }
 }
 
 function trocarTemperatura(){
     if(modoTemp === "CpraF"){
         modoTemp = "FpraC";
-        document.getElementById('labelTemp').innerHTML = "Fahrenheit (�F):";
+        document.getElementById('labelTemp').textContent = "Fahrenheit (°F):";
     } 
     else{
-        modo = "CpraF";
-        document.getElementById('labelTemp').innerHTML = "Celsius (�C):";
+        modoTemp = "CpraF";
+        document.getElementById('labelTemp').textContent = "Celsius (°C):";
     }
 
     document.getElementById('temp').value = "";
-    document.getElementById('resultado').innerHTML = "";
+    document.getElementById('resultado').textContent = "";
 }
